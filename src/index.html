@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Balance the Budget</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">-->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/budget.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="icon" type="image/png" href="Skeleton-2.0-2.4/images/favicon.png">-->
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row" id="main-row">
+      <div class="two columns">
+          <svg id="sinking-ship" height="300" width="100%">
+              <g id="ship">
+                  <rect id="revenue" x="50%"></rect>
+                  <rect id="halfway"></rect>
+                  <rect id="expenses" x="50%"></rect>
+              </g>
+              <rect id="shortfall" x="50%" transform="translate(35, 0)"></rect>
+              <rect id="water" y="150" height="200" width="100%"></rect>
+          </svg>
+      </div>
+        <div class="ten columns">
+            <h4>Balance the Budget</h4>
+            <p>Revenue</p>
+            <input type="range" min="0" max="5" value="2" id="revenue-slider">
+            <p>Expenses:</p>
+            <input type="range" min="0" max="5" value="1" id="expenses-slider">
+        </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/d3.min.js"></script>
+    <script src="js/budget.js"></script>
+</body>
+</html>

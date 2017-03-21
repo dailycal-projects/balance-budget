@@ -1,0 +1,16 @@
+#main-row {
+    margin-top: 10%;
+}
+
+#revenue {
+    fill: #9bdca2;
+}
+
+#expenses {
+    fill: #ffbec3;
+}
+
+#water {
+    fill: #92fdff;
+    opacity: 0.2;
+}
